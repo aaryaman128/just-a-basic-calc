@@ -31,12 +31,12 @@ selection=input("Pick a number for selection : ")
 
 print("=====================================================================")
 
-if selection in ('1','2','3','4','5','6'):
+if selection in ('1','2','3','4',):
     try:
         FirstNumber=float(input("Enter your first number of operation:"))
         SecondNumber=float(input("Enter your second number of operation:"))
     except :
-        print("Invalid input , please enter a proper number again.. (Ignore if you chose sqrt or cbrt)")
+        print("Invalid input , please enter a proper number again.. ")
             
 
 if selection in ('1'):
@@ -52,8 +52,11 @@ if selection in ('4'):
     print(FirstNumber, "Divided By " , SecondNumber, "=" ,divide(FirstNumber,SecondNumber))
     
 if selection in ('5'):
-    print("Square root of ", FirstNumber, "=" ,squareRoot(FirstNumber))
+    SquareNumber = float(input("Enter the Square , you want to find the root of : "))
+    print("Square root of ", SquareNumber, "=" ,squareRoot(SquareNumber))
    
 if selection in ('6'):
-    print("Cube root of" , FirstNumber, "=" ,cubeRoot(FirstNumber))
-  
+        CubeNumber=float(input("Enter the cube , you want to find the root of :"))
+        print("Cube root of" , CubeNumber , "=" ,cubeRoot(CubeNumber))
+    
+ 
